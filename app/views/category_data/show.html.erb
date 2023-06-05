@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @category_datum %>
+
+<div>
+  <%= link_to "Edit this category datum", edit_category_datum_path(@category_datum) %> |
+  <%= link_to "Back to category data", category_data_path %>
+
+  <%= button_to "Destroy this category datum", @category_datum, method: :delete %>
+</div>
