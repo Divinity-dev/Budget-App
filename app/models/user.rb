@@ -1,6 +1,10 @@
 class User < ApplicationRecord
-  has_many :categories, dependent: :destroy
-  has_many :data, dependent: :destroy
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_many :categories, dependent: :destroy, class_name: 'Category'
+  has_many :data, dependent: :destroy, class_name: 'Datum'
 
-  validates :name, presence: true, length: { minimum: 2, maximum: 100 }
+  validates :name, presence: true
 end

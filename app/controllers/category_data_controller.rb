@@ -19,8 +19,8 @@ class CategoryDataController < ApplicationController
 
   # POST /category_data or /category_data.json
   def create
+    puts category_datum_params
     @category_datum = CategoryDatum.new(category_datum_params)
-
     respond_to do |format|
       if @category_datum.save
         format.html do
