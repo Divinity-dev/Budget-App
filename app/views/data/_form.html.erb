@@ -1,4 +1,4 @@
-<%= form_with(model: datum) do |form| %>
+<%= form_with(model: datum, url:category_data_path, method: :post) do |form| %>
   <% if datum.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(datum.errors.count, "error") %> prohibited this datum from being saved:</h2>

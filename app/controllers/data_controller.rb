@@ -20,10 +20,11 @@ class DataController < ApplicationController
   # POST /data or /data.json
   def create
     @datum = Datum.new(datum_params)
-
+    category = Category.find(params[:category_id])
     respond_to do |format|
       if @datum.save
-        format.html { redirect_to datum_url(@datum), notice: 'Datum was successfully created.' }
+        CategoryDatum.create(category_id: category.id, data_id: @datum.id)
+        format.html { redirect_to category_data_path, notice: 'Datum was successfully created.' }
         format.json { render :show, status: :created, location: @datum }
       else
         format.html { render :new, status: :unprocessable_entity }

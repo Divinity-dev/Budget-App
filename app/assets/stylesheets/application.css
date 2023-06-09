@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ .category_icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
