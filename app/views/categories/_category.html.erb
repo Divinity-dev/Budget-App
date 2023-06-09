@@ -1,17 +1,14 @@
-<div id="<%= dom_id category %>">
+<div id="<%= dom_id(category) %>" class="category">
   <p>
-    <strong>Name:</strong>
-    <%= link_to "#{category.name}", category_data_path(category.id)%>
+    <%= image_tag(category.icon, class: "category_icon") %>
   </p>
-
+  <div class="category-div">
   <p>
-    <strong>Icon:</strong>
-    <%= image_tag category.icon, class:"category_icon" %>
+    <%= link_to(category.name, category_data_path(category.id), class: 'category_name') %>
   </p>
-
+  <p class="time"> <%= category.created_at.strftime("%d %b %Y") %></p>
+  </div>
   <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
+    $<%= category.data.sum(:amount) %>
   </p>
-
 </div>
