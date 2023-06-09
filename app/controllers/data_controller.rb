@@ -23,7 +23,7 @@ class DataController < ApplicationController
     category = Category.find(params[:category_id])
     respond_to do |format|
       if @datum.save
-        CategoryDatum.create(category_id:category.id, data_id:@datum.id)
+        CategoryDatum.create(category_id: category.id, data_id: @datum.id)
         format.html { redirect_to category_data_path, notice: 'Datum was successfully created.' }
         format.json { render :show, status: :created, location: @datum }
       else
