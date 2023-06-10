@@ -55,7 +55,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+
 
 - **[Add categories]**
 - **[Add data]**
@@ -68,15 +68,12 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://budget-app-4qqw.onrender.com)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- VIDEO  PRESENTATION -->
 
 ## 🚀 Video presentation <a name="video-demo"></a>
 
-> This is the link to my live video
 - [Video Link](https://www.loom.com/share/e7b729fa79164bbc9d5824866ca9c5ca)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,8 +81,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -168,8 +163,6 @@ Example:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Divine Asiriuwa**
 
