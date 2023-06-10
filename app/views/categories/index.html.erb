@@ -2,13 +2,9 @@
   <% @categories.each do |category| %>
     <% if can? :read, category %>
       <%= render category %>
-      <button>
-        <%= link_to "Show this category", category, class:'btn' %>
-      </button>
+      
     <% end %>
   <% end %>
 </div>
-
-<button><%= link_to "New category", new_category_path, class:'btn'  %></button>
 
 <p style="color: green"><%= notice %></p>
