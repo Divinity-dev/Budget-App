@@ -1,0 +1,219 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  background-color: #3673bc;
+  text-align: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.div {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.landing-page h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.landing-page span {
+  color: #ff6f00;
+}
+
+.reg {
+  margin-top: 30px;
+}
+
+.reg a {
+  display: inline-block;
+  background-color: #ff6f00;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.reg a:hover {
+  background-color: #ff8124;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .landing-page {
+    padding: 20px;
+  }
+
+  .div {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+
+  .landing-page h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .reg a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Styling for desktop screens */
+.field {
+  margin-bottom: 20px;
+}
+
+.user_field {
+  font-weight: bold;
+}
+
+.user_input {
+  width: 300px;
+  padding: 5px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+/* Styling for mobile screens */
+@media (max-width: 767px) {
+  .user_input {
+    width: 40%;
+  }
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #000;
+  height: 20vh;
+}
+
+.category_icon {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  /* Mobile Styles */
+  body {
+    background-color: #f1f3f2;
+  }
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    height: 20vh;
+    box-shadow: 4px 4px 4px #c2bebe;
+    margin: 10px;
+    background-color: #fff;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #3673bc;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .welcome {
+    color: #fff;
+  }
+
+  .nav-link {
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .category_name {
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .time {
+    color: #dfdfdf;
+    font-size: 15px;
+  }
+
+  .footer {
+    background-color: #5db41f;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .user {
+    color: #ff8124;
+    font-weight: 700;
+  }
+
+  .footer div {
+    border: 2px solid #fff;
+  }
+
+  .footer div h2 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .category_amount {
+    width: 20%;
+    margin: 10px;
+  }
+
+  .category_icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  button {
+    color: #fff;
+    background-color: #ff8124;
+    border-radius: 5px;
+  }
+
+  .btn {
+    color: #fff;
+  }
+}

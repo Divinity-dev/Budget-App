@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+
+<p>Total amount is = $<%= @data.where(author_id: current_user.id).sum(&:amount) %></p>
+
+<div id="data">
+  <% @data.each do |datum| %>
+    <% if can? :read, datum %>
+    <%= render datum %>
+    <%end%>
+  <% end %>
+</div>
+
+<%= link_to "New datum", new_category_datum_path %>
+<%= link_to "Back", categories_path %>

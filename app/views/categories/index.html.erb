@@ -1,0 +1,10 @@
+<div id="categories">
+  <% @categories.each do |category| %>
+    <% if can? :read, category %>
+      <%= render category %>
+      
+    <% end %>
+  <% end %>
+</div>
+
+<p style="color: green"><%= notice %></p>
